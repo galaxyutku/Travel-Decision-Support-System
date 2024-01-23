@@ -1,0 +1,30 @@
+.mainStyling{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-top: 10px;
+}
+
+.homeStyling{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vh;
+    height: fit-content;
+}
+.navbarStyling {
+    display: flex;
+    height: 70;
+    background-color: #1440eb;
+    font-family: "Roboto Condensed", sans-serif;
+    z-index: 1000000;
+  }
+
+  .logoStyling {
+    text-decoration: none;
+    font-size: 3em;
+    color: white;
+    font-family: "Kaushan Script", cursive;
+    padding: 10px 20px;
+  }

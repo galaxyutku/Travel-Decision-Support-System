@@ -5,18 +5,28 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './App.css';
-import Homepage from './views/Homepage';
+import './styles.css';
+import DetailPage from "./views/DetailPage";
+import Homepage from "./views/Homepage";
+import NavigationBar from "./components/NavigatİonBar";
 
 function App() {
   const router = createBrowserRouter([
     {
+      path: "/detail",
+      element: <DetailPage />,
+    },
+    {
       path: "/",
       element: <Homepage />,
-    },
+    }
   ]);
   return (
-    <div className="mainStyling">
-      <RouterProvider router={router} />
+    <div>
+      <NavigationBar />
+      <div className="mainStyling">
+        <RouterProvider router={router} />
+      </div>
     </div>
   );
 }
